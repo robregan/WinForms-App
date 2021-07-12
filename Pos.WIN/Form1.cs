@@ -33,5 +33,14 @@ namespace Pos.WIN
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+         string theMessage = Pos.BLL.Messages.GetMessage();
+            DateTime theDateAndTime = DateTime.Now;
+            MessageBox.Show($" {theMessage} {theDateAndTime}");
+         
+        //    MessageBox.Show(theDateAndTime.ToString());
+        }
     }
 }
